@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2: Day 1 Notes</title>
+</head>
+    <!--
+    <canvas> where we can draw by moving a mouse. A click on the “submit” button sends the image to server:
+    -->
+
+    <body style="margin:0">
+    <canvas id="canvasElem" width="100" height="80" style="border:1px solid"></canvas> <input type="button" value="Submit" onclick="submit()">
+
+    <script>
+        canvasElem.onmousemove = function(e) {
+            let ctx = canvasElem.getContext('2d'); ctx.lineTo(e.clientX, e.clientY); ctx.stroke();
+        };
+       
+        async function submit() {
+        
+            let blob = await new Promise(resolve => canvasElem.toBlob(resolve, 'image/png'));
+            let response = await fetch('/article/fetch/post/image', {
+                method: 'POST',
+                body: blob
+            });
+            let result = await response.json();
+            alert(result.message);
+        }
+    </script>
+
+</body>
+</html>

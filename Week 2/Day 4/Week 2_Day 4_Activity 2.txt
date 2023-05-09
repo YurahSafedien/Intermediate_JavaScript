@@ -1,0 +1,15 @@
+Week 2|Day 4|Activity 2
+====================================================
+
+Q: In your dev teams, decide on how you might (theoretically) include what you have learned today in your website and then create the plans/code for it.
+
+A: We have made a plan based on the previous days and plan to implement features to update the website.
+
+Q: Then, explain the features and code to your mentor.
+
+A: Will do so in the sprint.
+
+
+Q: Make any changes required after discussing with your mentor.
+
+A: Will do so with sprint feedback.

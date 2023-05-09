@@ -1,0 +1,19 @@
+Week 2|Day 1|Reflection
+-----------------------------------------------------------------------------------
+
+Q: What were the important features of the day?
+
+A: Image send.
+
+Q: What activities were beneficial?
+
+A: fetch() and post().
+
+Q: What activities (if any) were too easy?
+
+A: None.
+
+Q: What activities need more time?
+
+A: All
+
