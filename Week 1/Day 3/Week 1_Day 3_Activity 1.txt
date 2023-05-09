@@ -1,0 +1,39 @@
+Week 1|Day 3|Activity 1
+====================================================
+
+Q: In your dev team, discuss and consolidate what you know about clickjacking.
+
+A: Clickjacking - an attack that allows an evil page to click on a "victim site" without visitor consent.
+
+Clickjacking is triggered on clicks, not keyboard presses, which is more difficult to redirect.
+
+
+Q: Create a 10 minute presentation about clickjacking. Include information on:
+
+A: What it is:
+
+   Clickjacking( "click" and "hijacking") is a type of attack where an attacker tricks a user into clicking on a hidden or disguised element on a web page by overlaying it with another element.
+
+ : Why it is done:
+
+   - stealing sensitive info(passwords, credit card numbers, or personal data).
+   - Spreading malware(install malware on a user's computer by tricking them into downloading and installing a malicious program).
+
+ : How it is done:
+
+   Typically includes iframes, CSS or other ways to overlay transparent the element on top of the legitimate element it may be a link or button which tricks said user into clicking on the visible element and triggers invisible element.
+
+ : An example:
+
+   - Invisible buttons: The attacker can make a legitimate button or link invisible by setting its opacity to zero, and then place a fake button or link over it. When the user clicks on the visible element, they are actually clicking on the hidden element.
+
+   - Transparent overlays: The attacker can place a transparent element over a legitimate button or link, making it invisible to the user. When the user clicks on what appears to be the legitimate button or link, they are actually clicking on the hidden element.
+
+
+Q: Have one or 2 team members present to your peers and collect feedback.
+
+A: Due to lack of time, thiswill be put on hold.
+
+Q: Watch the other groups presentations and provide feedback.
+
+A: Will combine this with the weekly sprint

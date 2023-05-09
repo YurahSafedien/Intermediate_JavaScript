@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+<body>
+    
+    <div>
+        <button type="button" onclick="testWindows2()">Null Params</button> <hr>
+    </div>
+
+    <div>
+        <button type="button" onclick="testWindowParams()">Param Test</button>
+    </div>
+
+
+    <script>
+        function testWindows2(){
+            let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=0,height=0,left=-1000,top=-1000`;
+
+            open('https://youtube.com', 'test', params); 
+        }
+
+        function testWindowParams(){
+            let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=600,height=300,left=100,top=100`;
+
+            open('https://youtube.com', 'test', params);
+        }
+    </script>
+</body>
+</html>

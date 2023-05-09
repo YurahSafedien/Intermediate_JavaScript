@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1: Day 3 Notes</title>
+</head>
+<body>
+
+    <!--Facebook Clickjacking attack Representation-->
+    <style>
+
+        iframe { /* iframe from the victim site */
+        
+            width: 400px;
+            
+            height: 100px;
+            
+            position: absolute;
+            
+            top:0; left: -20px;
+            
+            opacity: 0.5; /* in real opacity:0 */
+            
+            z-index: 1;
+        
+        }
+        
+        </style>
+        
+        <div>Click to get rich now:</div>
+        
+        <!-- The url from the victim site -->
+        
+        <iframe src="/clickjacking/facebook.html"></iframe>
+        
+        <button>Click herel</button>
+        
+        <div>...And you're cool (I'm a cool hacker actually) I</div>
+
+        <!--Defense against clickjacking-->
+        <iframe sandbox="allow-scripts allow-forms" src="facebook.html"></iframe>
+
+        <!--X-Frame-Options-->
+        <iframe src="https://twitter.com"></iframe>
+        <!--the iframe is either empty or alerting that this page is forbidden from navigating - browser dependant-->
+
+<script>
+    
+</script> 
+
+</body>
+</html>

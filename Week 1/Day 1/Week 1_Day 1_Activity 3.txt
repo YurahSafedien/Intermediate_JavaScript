@@ -1,0 +1,32 @@
+Week 1|Day 1|Activity 3
+====================================================
+
+Q: In your dev teams, decide on how you might (theoretically) include popups in your website and then create the code for it.
+
+A: Idea 1 - have an enrollment pop-up for application close-date.
+
+   Idea 2 - Pop-ups for the games with score displaying current score and highest score.
+
+   Idea 3 - Pop-up for when pages are down.
+
+Q: Then, explain the features and code to your mentor.
+
+A: Idea 1 
+    - declare 2 variables that stores the     startDate value and endDate value.
+    - use the Date() function to read the devices or get online current date.
+    - use an if statement (or while loop, depending how we plan to do it exactly) to test an argument.
+    - the argument will be declare with operators <= and >= to read if the date is equal to or between those dates, the enrollment form will be open.
+
+    - if the argument is false, a pop-up will appear declaring that the application form has expired and enrollment in now closed.
+
+   Idea 2
+    - include pop-up code in game termination, that should the game stop or be completed, a pop-up window will appear and display the current score and previous high score.
+
+    - the score can be stored and an if statement can be implemented that should the current score be more than the current highscore, the high score rewrites.
+
+   Idea 3
+    - a maintenance notification window pops up whenever they try to navigate to a page that's down or unavailable at the moment.
+
+Q: Make any changes required after discussing with your mentor.
+
+A: Will design and discuss ideas with mentor and alternative uses for pop-ups that may be better and benefit the website better.
